@@ -1,0 +1,79 @@
+version: 0.5
+basedir: ./shape/
+outputfile: ./censusarea.json
+layers:
+
+  - layer: pref
+    file:
+    - name: pref.shp
+      encoding: cp932
+      prop: name
+      minzoom: 0
+      maxzoom: 10
+  - layer: pref_name
+    file:
+    - name: pref.shp
+      encoding: cp932
+      attr: name
+      minzoom: 0
+      maxzoom: 10
+
+  - layer: city
+    file:
+    - name: city.shp
+      encoding: cp932
+      prop: name
+      minzoom: 7
+      maxzoom: 16
+  - layer: city_name
+    file:
+    - name: city.shp
+      encoding: cp932
+      attr: name
+      minzoom: 7
+      maxzoom: 16
+
+  - layer: city_s
+    file:
+    - name: city_s.shp
+      encoding: cp932
+      prop: name
+      minzoom: 7
+      maxzoom: 16
+  - layer: city_s_name
+    file:
+    - name: city_s.shp
+      encoding: cp932
+      attr: name
+      minzoom: 7
+      maxzoom: 16
+
+  - layer: city_sb
+    file:
+    - name: city_sb.shp
+      encoding: cp932
+      prop: name
+      minzoom: 8
+      maxzoom: 16
+  - layer: city_sb_name
+    file:
+    - name: city_sb.shp
+      encoding: cp932
+      attr: name
+      minzoom: 8
+      maxzoom: 16
+
+  - layer: c_area
+    file:
+    - name: c_area.shp
+      encoding: cp932
+      prop: name
+      minzoom: 11
+      maxzoom: 16
+  - layer: c_area_name
+    file:
+    - name: c_area.shp
+      encoding: cp932
+      attr: name
+      minzoom: 11
+      maxzoom: 16

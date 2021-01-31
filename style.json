@@ -1,0 +1,241 @@
+{
+  "version": 8,
+  "name": "Geolonia",
+  "center": [35.5, 139.5],
+  "zoom": 4,
+    "sources": {
+    "geolonia": {
+      "type": "vector",
+      "url": "mbtiles://{censusarea}"
+    }
+  },
+  "sprite": "https://sprites.geolonia.com/basic",
+  "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {"background-color": "rgba(254, 254, 254, 1)"}
+    },
+    {
+      "id": "pref",
+      "type": "fill",
+      "source": "geolonia",
+      "source-layer": "pref",
+      "minzoom": 0,
+      "maxzoom": 8,
+      "filter": ["none"],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(180, 214, 164, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, 1)",
+        "fill-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "city",
+      "type": "fill",
+      "source": "geolonia",
+      "source-layer": "city",
+      "minzoom": 8,
+      "maxzoom": 12,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(188, 222, 241, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "city_s",
+      "type": "fill",
+      "source": "geolonia",
+      "source-layer": "city_s",
+      "minzoom": 8,
+      "maxzoom": 10,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(212, 232, 234, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "city_sb",
+      "type": "fill",
+      "source": "geolonia",
+      "source-layer": "city_sb",
+      "minzoom": 10,
+      "maxzoom": 12,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(212, 232, 234, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "c_area",
+      "type": "fill",
+      "source": "geolonia",
+      "source-layer": "c_area",
+      "minzoom": 12,
+      "maxzoom": 24,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(243, 207, 208, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "pref_name",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "pref_name",
+      "minzoom": 0,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 14,
+        "text-field": ["to-string", ["get", "name"]],
+        "text-max-width": 8,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(102, 102, 102, 1)",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255,255,255,0.8)"
+      }
+    },
+    {
+      "id": "city_name",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "city_name",
+      "minzoom": 8,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 14,
+        "text-field": ["to-string", ["get", "name"]],
+        "text-max-width": 8,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(102, 102, 102, 1)",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255,255,255,0.8)"
+      }
+    },
+    {
+      "id": "city_s_name",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "city_s_name",
+      "minzoom": 8,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 14,
+        "text-field": ["to-string", ["get", "name"]],
+        "text-max-width": 8,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(102, 102, 102, 1)",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255,255,255,0.8)"
+      }
+    },
+    {
+      "id": "city_sb_name",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "city_sb_name",
+      "minzoom": 10,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 14,
+        "text-field": ["to-string", ["get", "name"]],
+        "text-max-width": 8,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(102, 102, 102, 1)",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255,255,255,0.8)"
+      }
+    },
+    {
+      "id": "c_area_name",
+      "type": "symbol",
+      "source": "geolonia",
+      "source-layer": "c_area_name",
+      "minzoom": 12,
+      "maxzoom": 24,
+      "layout": {
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 14,
+        "text-field": ["to-string", ["get", "name"]],
+        "text-max-width": 8,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(102, 102, 102, 1)",
+        "text-halo-width": 1.2,
+        "text-halo-color": "rgba(255,255,255,0.8)"
+      }
+    },
+    {
+      "id": "city_sb_line",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "city_sb",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "paint": {
+        "line-color": "rgba(40, 234, 37, 0.99)",
+        "line-width": 2,
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "city_s_line",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "city_s",
+      "minzoom": 8,
+      "maxzoom": 24,
+      "paint": {
+        "line-color": "rgba(18, 19, 226, 1)",
+        "line-width": 2,
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "city_line",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "city",
+      "minzoom": 8,
+      "maxzoom": 24,
+      "paint": {
+        "line-color": "rgba(18, 19, 226, 1)",
+        "line-width": 2,
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "pref_line",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "pref",
+      "minzoom": 3,
+      "maxzoom": 24,
+      "paint": {
+        "line-color": "rgba(214, 19, 19, 1)",
+        "line-opacity": 0.5,
+        "line-width": 2
+      }
+    }
+  ],
+  "id": "geolonia-basic"
+}

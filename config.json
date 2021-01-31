@@ -1,0 +1,22 @@
+{
+    "options": {
+      "paths": {
+        "root": "",
+        "styles": "",
+        "mbtiles": ""
+      }
+    },
+    "styles": {
+      "censusarea": {
+        "style": "style.json",
+        "tilejson": {
+          "bounds": [90.25, 10.8, 165.2, 75.8]
+        }
+        }
+    },
+    "data": {
+      "censusarea": {
+        "mbtiles": "censusarea.mbtiles"
+      }
+    }
+  }
