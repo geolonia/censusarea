@@ -30,7 +30,7 @@ $ ./gencensusarea.sh
   + fiona
   + shapely
 
-spatialite-toolsのバージョン4以前では、日本語が文字化けする可能性があります。リポジトリにパッケージがない場合はソースからのビルドとなります。以下を参考にしてください。  
+spatialite-toolsのバージョン4以前では、日本語が文字化けする可能性があります。リポジトリにバイナリパッケージがない場合はソースからのビルドとなります。以下を参考にしてください。  
 https://www.gaia-gis.it/fossil/spatialite-tools/index  
 なお、MacOS（Big Sur）の場合は、homebrewを使えばspatialite-tools5がインストールされます。
 
