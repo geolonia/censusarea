@@ -28,7 +28,7 @@ $ ./runtilesv.sh
 ```
 `runtilesv.sh`は、TileserverGLのDockerコンテナを作成し mbtiles を配信します。  
 以下のオプションを指定できます。  
-* `-d`：`oceanus.mbtiles`が存在するディレクトリを指定します。（未指定時は`/tmp`）
+* `-d`：`censusarea.mbtiles`が存在するディレクトリを指定します。（未指定時はカレントディレクトリ）
 * `-p`：配信ポート番号を指定します。（未指定時は`80`）
 * `-n`：TileserverGLのコンテナ名を指定します。（未指定時は`censussv`）
 
