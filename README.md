@@ -30,7 +30,7 @@ $ ./runtilesv.sh
 以下のオプションを指定できます。  
 * `-d`：`oceanus.mbtiles`が存在するディレクトリを指定します。（未指定時は`/tmp`）
 * `-p`：配信ポート番号を指定します。（未指定時は`80`）
-* `-n`：TileserverGLのコンテナ名を指定します。（未指定時は`tilesv`）
+* `-n`：TileserverGLのコンテナ名を指定します。（未指定時は`censussv`）
 
 ### 地図の表示
 `runtilesv.sh`実行後、ブラウザからURL `http://localhost:ポート番号` を指定するとTileserverGLの初期画面が表示されます。スタイル"basic"を指定することで地図を表示できます。  
