@@ -2,5 +2,7 @@
 __pycache__
 download
 shape
-censusarea.*
+censusarea.json
+censusarea.mbtiles
+censusarea.sqlite
 *.txt
