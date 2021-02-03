@@ -50,4 +50,4 @@ https://www.gaia-gis.it/fossil/spatialite-tools/index
 
 ### 変換結果表示URL
 
-[https://labo.takamoto.biz/censusarea](https://labo.takamoto.biz/censusarea)
+[https://geolonia.github.io/censusarea/censusarea.html](https://geolonia.github.io/censusarea/censusarea.html)
